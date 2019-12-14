@@ -1,0 +1,172 @@
+@import 'config';
+
+.container{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+body{
+    font-family: 'quicksand';
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'quicksand';
+    color: #222;
+}
+
+//Buttons
+.btn{
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    &.btn-transparent-white{
+        color: #fff;
+        font-weight: bold;
+        border: 2px solid #fff;
+        background: transparent ;
+    }
+}
+
+nav{
+    background: #F1ECDA;
+    border-bottom: 4px solid #562308;
+    
+    .container{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-family: 'nicocyan';
+        }
+
+        ul{
+            display: flex;
+            li{
+                margin-right: 1rem ;
+                a{
+                    font-weight: bold;
+                    font-size: large;
+                }
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:3rem;
+    margin: auto;
+    height: 0.5rem;
+    .line{
+        background: #222;
+        height: 1px;
+        display: inline-block;
+        &.one{
+            width: 6rem;
+        }
+        &.two{
+            width: 4rem;
+        }
+
+        &.three{
+            width: 2rem;
+        }
+    }
+}
+
+.hexagon {
+    position: relative;
+    width: 125px; 
+    height: 72.17px;
+    background-color: #fff;
+    margin: 36.08px 0;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    border-left: 62.5px solid transparent;
+    border-right: 62.5px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 36.08px solid #fff;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 36.08px solid #fff;
+  }
+
+  //Buttons
+  .btn{
+    &-primary{
+        padding: 0.5rem 1.75rem;
+        color: #fff;
+        background: #FFA000;
+        border-radius: 50px;
+        font-family: 'Cabin';
+    }
+  }
+//Footer
+  footer{
+    background: #f2f2f2;
+    .container{
+        .top{
+            border-bottom: #cbcbcb 1px solid;
+        }
+        .bottom{
+            justify-content: right;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin: 0 0.25rem;
+                    a{
+                        color: #979797;
+                        font-size: 8pt;
+                    }
+                }
+                li:first-child{
+                    margin-left: 0;
+                }
+                li:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

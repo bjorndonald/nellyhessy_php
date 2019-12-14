@@ -1,0 +1,202 @@
+@import 'utilities';
+@import 'product';
+@import 'blog';
+header{
+    background: url('./../img/banner.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 91vh;
+    color: white;
+
+    .dark-overlay{
+        background: rgba(0, 0, 0, 0.047);
+        height: 100%;
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            .heading{
+                max-width: 800px;
+                h1{
+                    margin-top: -30vh;
+                    font-size: 45pt;
+                    font-family: 'archivo';
+                }
+                p{
+                    margin-bottom: 1.5rem;
+                    
+                    a{font-family: 'nicocyan'; font-weight: bold;
+                    color: white; font-size: 20pt;}
+                }
+            }
+        }
+    }
+}
+
+section#about{
+    min-height: 100vh;
+    position: relative;
+    padding: 10vh 0;
+    .overlay{
+        background: url('./../img/banner_2.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        opacity: 0.25;
+        width: 100%;
+        top: 0;
+        z-index: -2;
+        left: 0;
+        position: absolute;
+        .screen{
+            background: linear-gradient(90deg, #F0E3BF 0%, #FFA000 100%);
+            opacity: 0.25;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        h2{
+            text-align: center;
+            font-family: 'bebas neue';
+            margin-bottom: 0.5rem;
+           // margin-top: 2rem;
+            font-size: 30pt;
+        }
+
+        h1{
+            //text-align: justify;
+            font-size: 29pt;
+            font-weight: bolder;
+            margin-bottom: 4rem;
+        }
+
+        a{
+            padding: 0.5rem 1.75rem;
+            color: #fff;
+            background: #FFA000;
+            border-radius: 50px;
+            font-family: 'Cabin';
+            margin-bottom: 4rem;
+        }
+    
+        .lines{
+            margin-bottom: 5vh;
+        }
+
+        p{
+            text-align: justify;
+        }
+    
+        .bottom{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-gap: 3rem;
+            img{
+                width: 100%;
+            }
+            p{
+                font-weight: bold;
+            }
+
+            .hexagon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-left: 2px solid #FFA000;
+                border-right: 2px solid #FFA000;
+                img{
+                    margin-top: 5px;
+                    width: 70px;
+                    height: 70px;
+                }
+
+                h2{
+                    font-family: 'bebas neue';
+                    text-align: center;
+                    font-size: 9pt;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    
+}
+
+section#products{
+    height: 100vh;
+    padding: 10vh 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            text-align: center;
+            font-family: 'bebas neue';
+            margin-bottom: 0.5rem;
+           // margin-top: 2rem;
+            font-size: 30pt;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40pt;
+            font-weight: bolder;
+        }
+    
+        .lines{
+            margin-bottom: 5vh;
+        }
+        .products{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-gap: 3rem;
+
+            .product{
+                h2{
+                    text-align: center;
+                    font-family: 'bebas neue';
+                }
+                h1{
+                    font-family: 'bebas neue';
+                }
+            }
+            margin-bottom: 2rem;
+        }
+
+        a{
+            padding: 0.5rem 1.75rem;
+            color: #fff;
+            background: #FFA000;
+            border-radius: 50px;
+            font-family: 'Cabin';
+            margin: auto;
+        }
+    }
+}
+
+section#blog{
+    height: 90vh;
+    position: relative;
+    .right{
+        position: absolute;
+        top: 0;
+        left: calc(100% - 6rem);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img{
+            width: 50px;
+            height: 40px;
+        }
+    }
+}
